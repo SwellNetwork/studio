@@ -16,7 +16,7 @@ import { SwellContractFactory, Sweth } from '../contracts';
 
 @PositionTemplate()
 export class EthereumSwellSwethTokenFetcher extends AppTokenTemplatePositionFetcher<Sweth> {
-  groupLabel: string;
+  groupLabel = 'swETH';
 
   constructor(
     @Inject(APP_TOOLKIT) protected readonly appToolkit: IAppToolkit,
